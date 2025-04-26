@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="toggle-buttons">
+                <button id="login-toggle" class="active">Login</button>
+                <button id="register-toggle">Register</button>
+            </div>
+
+            <form id="login-form" class="form active">
+                <h2>Login to Your Account</h2>
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit"><a href="Home.html">Login</a></button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+
+            <form id="register-form" class="form">
+                <h2>Create New Account</h2>
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" minlength="6" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-phone">Phone Number</label>
+                    <input type="tel" id="register-phone">
+                </div>
+                <div class="form-group">
+                    <label for="register-address">Shipping Address</label>
+                    <textarea id="register-address" rows="3"></textarea>
+                </div>
+                <button type="submit">Register</button>
+                <p id="register-error" class="error-message"></p>
+                <p id="register-success" class="success-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

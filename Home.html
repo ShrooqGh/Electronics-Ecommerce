@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMart - Home</title>
+    <link rel="stylesheet" href="Home.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets2/makeprom1.jpeg" alt="ElectroMart">
+                <h1>ElectroMart</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#product">Products</a></li>
+                    <li><a href="#category">Categories</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#About" >Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <div class="user-profile" id="userProfile">
+                    <div class="user-avatar" id="userAvatar">U</div>
+                    <span id="userName">User</span>
+                </div>
+                <button id="logoutBtn" class="btn" style="padding: 0.5rem 1rem;"><a href="index.html">Logout</a></button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Latest Electronics Collection</h2>
+            <p>Discover the best deals on smartphones, laptops, gadgets and more</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+        </div>
+    </section>
+    
+    <main class="main-container">
+        <section class="categories-section" id="category">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories">
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="assets1/smartphone-2048px-1013.jpg" alt="" width="100%">
+                    </div>
+                    <div class="category-info">
+                        <h3>Smartphones</h3>
+                        <p>50+ Products</p>
+                        
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                       <img src="assets1/laptop.png" alt="" width="70%">
+                    </div>
+                    <div class="category-info">
+                        <h3>Laptops</h3>
+                        <p>30+ Products</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                       <img src="assets1/audio.jpeg" alt="" width="100%" style="background-color: beige;" >
+                    </div>
+                    <div class="category-info">
+                        <h3>Audio</h3>
+                        <p>45+ Products</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="assets1/tablte.jpeg" alt="" width="90%">
+                    </div>
+                    <div class="category-info">
+                        <h3>Tablets</h3>
+                        <p>25+ Products</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="assets1/tv.jpeg" alt="" width="100%">
+                    </div>
+                    <div class="category-info">
+                        <h3>TVs</h3>
+                        <p>20+ Products</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section class="featured-products" id="product">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Sale</div>
+                        <img src="assets2/iphone 13 pro max.jpg" alt="iPhone 13" width="100%" style="object-fit:contain;max-width: 80%;">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13 Pro Max</h3>
+                        <div class="price">$999 <span class="old-price">$1099</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <div class="product-actions">
+                            <!-- <add button> -->
+                            <button onclick="addToCart('iPhone 13 Pro Max', 999)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets2/mackbook.jpeg" alt="MacBook Pro" width="100%">
+                    </div>
+                    <div class="product-info">
+                        <h3>MacBook Pro M1</h3>
+                        <div class="price">$1299</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(95)</span>
+                        </div>
+                        <div class="product-actions">
+                            <!-- <add button> -->
+                            <button onclick="addToCart('MacBook Pro M1', 1299)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        <img src="assets2/sony.jpeg" alt="Sony Headphones" width="100%">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sony WH-1000XM4</h3>
+                        <div class="price">$349 <span class="old-price">$399</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(210)</span>
+                        </div>
+                        <div class="product-actions">
+                            <!-- <add button> -->
+                            <button onclick="addToCart('Sony WH-1000XM4', 349)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets2/watch.webp" alt="Samsung Watch" width="100%">
+                    </div>
+                    <div class="product-info">
+                        <h3>Samsung Galaxy Watch 4</h3>
+                        <div class="price">$249</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(76)</span>
+                        </div>
+                        <div class="product-actions">
+                            <!-- <add button> -->
+                            <button onclick="addToCart('Samsung Galaxy Watch 4', 249)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="deals-section " id="deals">
+            <h2 class="section-title">Today's Deals</h2>
+            <div class="products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">-20%</div>
+                        <img src="assets2/airbods.jpg" alt="AirPods Pro" width="100%">
+                    </div>
+                    <div class="product-info">
+                        <h3>AirPods Pro</h3>
+                        <div class="price">$199 <span class="old-price">$249</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(312)</span>
+                        </div>
+                        <div class="product-actions">
+                            <!-- <add button> -->
+                            <button onclick="addToCart('AirPods Pro', 199)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">-15%</div>
+                        <img src="assets2/IMG_0544-scaled.jpg" alt="PlayStation 5" width="100%" >
+                    </div>
+                    <div class="product-info">
+                        <h3>PlayStation 5</h3>
+                        <div class="price">$499 <span class="old-price">$599</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(84)</span>
+                           
+                        </div>
+                        <div class="product-actions">
+                            <!-- <add button> -->
+                            <button onclick="addToCart('PlayStation 5', 499)">Add to Cart</button>
+                        </div>
+                        </section>
+                        <footer style="background-color: gray;" id="About">
+                            <div class="footer-container">
+                              <div class="footer-section" >
+                                <ul>
+                                  <li><strong>AboutUs</strong></li>
+                                  <li>Policies</li>
+                                  <li>Investors</li>
+                                  <li>Careers</li>
+                                </ul>
+                              </div>
+                          
+                              <div class="footer-section">
+                                <ul>
+                                  <li><strong>Shop</strong></li>
+                                  <li>Gift Card</li>
+                                  <li>etsy Registery</li>
+                                  <li>etsy blog</li>
+                                </ul>
+                              </div>
+                          
+                              <div class="footer-section">
+                                <ul>
+                                  <li><strong>Sell</strong></li>
+                                  <li>Seals on etcy</li>
+                                  <li>Contact Sales</li>
+                                  <li>Plans & Pricing</li>
+                                  
+                                </ul>
+                              </div>
+                          
+                              <div class="footer-section">
+                                <ul>
+                                  <li><strong>Help</strong></li>
+                                  <li>Account</li>
+                                  <li>Support Center</li>
+                                  <li>privacy settings</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </footer>
+
+                          <!-- Shopping Cart start Here-->
+                          <div id="side-cart" class="cart">
+                            <div class="cart-header">
+                                <h2>Shopping Cart</h2>
+                                <button class="close-btn" onclick="closeCart()">×</button>
+                            </div>
+                            <!-- <h2>Shopping Cart</h2> -->
+                            <ul id="cart-items"></ul>
+                            <button id="checkout">Checkout</button>
+                        </div>
+                        
+                          <script src="js-shopping-cart.js"></script>
+                           </body>
+   </html>
