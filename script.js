@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sessionStorage.setItem('currentUser', JSON.stringify(user));
         
         
-        window.location.href = 'dashboard.html';
+        window.location.href = 'Home.html';
     });
 
 
